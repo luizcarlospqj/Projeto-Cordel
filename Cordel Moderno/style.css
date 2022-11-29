@@ -1,0 +1,132 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Nerko+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Courgette&display=swap');
+
+:root {
+
+    --imagem_joaninha: url(https://i0.wp.com/jornal.usp.br/wp-content/uploads/2022/03/20220316_joaninha.jpg?fit=1200%2C630&ssl=1);
+    --imagem_livro: url(https://img.freepik.com/fotos-premium/fundo-das-paginas-do-livro_8119-866.jpg?w=2000);
+    --fonte_titulo:'Nerko One, cursive;';
+    --fonte_texto: 'Courgette', cursive;
+}
+
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+body {
+    min-height: 100vh;
+    background-color: rgb(216, 216, 216);
+}
+
+header {
+    background-color: black;
+    width: auto;
+    height: 100px;
+    font-variant:small-caps;
+    padding-top: 3vh;
+}
+header p {
+    color: white;
+    text-align: center;
+    padding: 0.8vw;
+    font-size: 12px;
+}
+
+header h1 {
+    text-align: center;
+    font-size: 2.5em;
+    color: white;
+    font-family: var(--fonte_titulo);
+    font-style: normal;
+
+}
+a#autor {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-family: 'cursive';
+}
+a#autor:hover {
+    text-decoration: underline;
+    font-size: 14px;
+    color: rgb(185, 185, 185);
+}
+a#meu_github:hover {
+        text-decoration: underline;
+        color: rgb(0, 80, 201);
+}
+
+a#meu_github {
+    text-align: center;
+    color: blue;
+    text-decoration: none;
+}
+
+.formataçaotextos {
+    margin-top: 60px;
+    margin-bottom: 70px;
+
+}
+
+section p {
+    font-family: var(--fonte_texto);
+    font-size: 4vw; 
+    margin-left: 40px;
+    text-shadow: 0px 1px 1px rgba(0, 0, 0, 0.222);
+    line-height: 65px;
+
+}
+
+#imagem_joaninha {
+    background-image: var(--imagem_joaninha);
+    padding: 30px 0px 10px 0px;
+    border: rgba(115, 246, 59, 0.42) solid;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+
+}
+
+#texto_joaninha {
+    display: inline-block;
+    size: 100vh, 100vw;
+    background-color: rgba(0, 0, 0, 0.209);
+    color: #bebebe;
+    text-shadow: 0px 1px 3px rgba(0, 0, 0, 0.289);
+    border-radius: 15px;
+    padding: 15px;
+
+}
+
+#imagem_livro {
+    background-image: var(--imagem_livro);
+    padding: 30px 0px 10px 0px;
+    border: 3px solid #F1E0C0;
+    background-position: 100%;
+    background-attachment: local;
+}
+
+#texto_livro {
+    display: inline-block;
+    background-color: rgba(0, 0, 0, 0.203);
+    color: #F1E0C0;
+    border-radius: 15px;
+    text-shadow: 0px 1px 2px rgba(0, 0, 0, 0.289);
+    padding: 5px;
+    text-emphasis-style: bolder;
+    padding: 15px;
+
+}
+
+footer {
+    padding: 3px;
+    background-color: lightskyblue;
+    text-align: center;
+    font-size: 2.3vh;
+}
+
+abbr {
+    text-decoration: none;
+}
